@@ -52,3 +52,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // For smooth scrolling
+    });
+};
+
+function scrollToAbout() {
+    document.getElementById("about").scrollIntoView({
+        behavior: 'smooth' // Smooth scroll effect
+    });
+};
+
