@@ -66,3 +66,10 @@ function scrollToAbout() {
     });
 };
 
+function scrollToProjects() {
+    document.getElementById("projects").scrollIntoView({
+        behavior: 'smooth' // Smooth scroll effect
+    });
+};
+
+
