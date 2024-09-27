@@ -28,7 +28,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#" onclick="scrollToTop(); return false;">ILUZM</a>
+                <a class="navbar-brand" href="" onclick="scrollToTop(); return false;">ILUZM</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -42,12 +42,18 @@
             </div>
         </nav>
 
+        <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/backgroundVid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-3 px-lg-3 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-start">
-                    <div class="text-start">
-                        <h1 class="mx-auto my-0 text-uppercase">iluzm</h1>
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase glow">iluzm</h1>
                         <div class="type-container">
                             <h2 class="text-white-50 mx-auto mt-2 mb-5">We specialize in <span class="auto-type"></span></h2>
                         </div>
@@ -63,7 +69,7 @@
                             });
                         </script>
                         
-                        <a class="btn btn-primary" href="#" onclick="scrollToAbout(); return false;">Get Started</a>
+                        <a class="btn btn-primary" href="" onclick="scrollToAbout(); return false;">View Project</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +89,52 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+                <img class="img-fluid" src="img/ipad.png" alt="..." />
+            </div>
+        </section>
+
+
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Misty</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
