@@ -23,6 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 
@@ -69,7 +71,8 @@
                 <div class="text-center">
                     <h1 class="text first-text"><img src="assets/iluzmLogo.png" alt="Logo"
                             style="width: 35%; height: auto"></h1>
-                    <p class="text-white-50 mx-auto mt-2 mb-5 text second-text">We specialize in Visual Effects & 3D animation.</p>
+                    <p class="text-white-50 mx-auto mt-2 mb-5 text second-text">We specialize in Visual Effects & 3D
+                        animation.</p>
 
                     <script>
                         // Function to trigger animations
@@ -127,7 +130,7 @@
                         <span class="text-white">-Rotoscoping</span>
                     </p>
                 </span>
-                <!--
+                
                 <span class="col-lg-6 justify-content-end text-end">
                     <br />
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/yeVVqTcS3x8?si=j-kHR-lRcgtH-UUJ"
@@ -135,7 +138,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </span>
-                -->
+                
             </div>
         </div>
 
@@ -149,11 +152,11 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-end text-end">
                 <span class="col-lg-12 justify-content-center"></span>
-                    <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">Projects</h2>
+                <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">Projects</h2>
 
-                    <button id="vfxBtn" class="text-uppercase">VFX</button>
-                    &nbsp;
-                    <button id="animBtn" class="text-uppercase">3D Animation</button>
+                <button id="vfxBtn" class="text-uppercase">VFX</button>
+                &nbsp;
+                <button id="animBtn" class="text-uppercase">3D Animation</button>
 
 
 
@@ -161,15 +164,57 @@
                 </span>
                 
 
-                
+
 
 
             </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/iluzmLogo.png" alt="Logo" class="swiper-content">
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination" style="color: white;"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="color: white;"></div>
+                <div class="swiper-button-next" style="color: white;"></div>
+
+            </div>
+
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            </script>
         </div>
 
-
-
     </section>
+
 
 
 
@@ -180,18 +225,22 @@
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-8 justify-content-start">
                     <a class="navbar-brand" href="" onclick="scrollToTop(); return false;"
-                style="width: 8%; height: fit-content; margin: 0px; padding: 0px;">
+                        style="width: 8%; height: fit-content; margin: 0px; padding: 0px;">
                         <img src="assets/iluzmLogo.png" alt="Logo" style="width: 25%;">
                     </a>
                 </div>
                 <div class="col-lg-4 justify-content-end text-end">
                     <table style="width: 100%; text-align: right">
                         <tr>
-                            <th><h5 class="text-uppercase">Projects</h5></th>
+                            <th>
+                                <h5 class="text-uppercase">Projects</h5>
+                            </th>
                             <th style="width: 15%;">
                                 &nbsp;
                             </th>
-                            <th><h5 class="text-uppercase">Contact</h5></th>
+                            <th>
+                                <h5 class="text-uppercase">Contact</h5>
+                            </th>
                         </tr>
                         <tr>
                             <td>
@@ -210,17 +259,20 @@
                         </tr>
                     </table>
                 </div>
-                
+
             </div>
 
             <div class="row gx-4 gx-lg-5 py-4">
                 <div class="col-lg-12 justify-content-end text-end">
-                    <a class="mx-2" href="" style="width: 8%;"><img src="assets/instagram-white-icon.png" alt="" style="width: 3%;"></a>
-                    <a class="mx-2" href="" style="width: 8%;"><img src="assets/whatsapp-white-icon.png" alt="" style="width: 3%;"></a>
-                    <a class="mx-2" href="" style="width: 8%;"><img src="assets/email-white-icon.png" alt="" style="width: 3%;"></a>
+                    <a class="mx-2" href="https://www.instagram.com/iluzm_" target="_blank"><img src="assets/instagram-white-icon.png" alt=""
+                            style="width: 2.5%;"></a>
+                    <a class="mx-2" href="https://wa.me/+601136336679" target="_blank"><img src="assets/whatsapp-white-icon.png" alt=""
+                            style="width: 2.5%;"></a>
+                    <a class="mx-2" href="mailto:visualbyiluzm@gmail.com"><img src="assets/email-white-icon.png" alt=""
+                            style="width: 2.5%;"></a>
                     <br />
                     <br />
-        <div>© <span id="yeartext"></span> ILUZM | All Rights Reserved</div>
+                    <div>© <span id="yeartext"></span> ILUZM | All Rights Reserved</div>
                 </div>
             </div>
         </div>
