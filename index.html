@@ -72,7 +72,7 @@
                     <h1 class="text first-text"><img src="assets/iluzmLogo.png" alt="Logo"
                             style="width: 35%; height: auto"></h1>
                     <p class="text-white-50 mx-auto mt-2 mb-5 text second-text">We specialize in Visual Effects & 3D
-                        animation.</p>
+                        Visuals.</p>
 
                     <script>
                         // Function to trigger animations
@@ -111,7 +111,7 @@
                 <span class="col-lg-6 justify-content-start">
                     <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">About Us</h2>
                     <p class="text-white-50">
-                        We specialize in Visual Effects & 3D animation.
+                        We specialize in Visual Effects & 3D Visuals.
                         <br />
                         Helping you bring your ideas to life. <br />
                         We offers wide range of VFX production services, including:
@@ -130,7 +130,7 @@
                         <span class="text-white">-Rotoscoping</span>
                     </p>
                 </span>
-                
+
                 <span class="col-lg-6 justify-content-end text-end">
                     <br />
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/yeVVqTcS3x8?si=j-kHR-lRcgtH-UUJ"
@@ -138,7 +138,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </span>
-                
+
             </div>
         </div>
 
@@ -148,70 +148,74 @@
 
 
     <!-- Projects-->
-    <section class="bg-black" id="projects">
+    <section class="bg-black project-section" id="projects">
         <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-end text-end">
-                <span class="col-lg-12 justify-content-center"></span>
-                <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">Projects</h2>
+            <div class="row gx-4 gx-lg-5">
 
-                <button id="vfxBtn" class="text-uppercase">VFX</button>
-                &nbsp;
-                <button id="animBtn" class="text-uppercase">3D Animation</button>
+                <span class="col-lg-4 justify-content-start text-start">
+                    <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">Projects</h2>
+                
+                    <button id="vfxBtn" class="text-uppercase">VFX</button>
+                    &nbsp;
+                    <button id="animBtn" class="text-uppercase">3D Visuals</button>
+                
+                
+                
+                
+                </span>
+                <span class="col-lg-8 justify-content-end text-end">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="assets/iluzmLogo.png" alt="Logo" class="swiper-content">
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination" style="color: white;"></div>
 
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev" style="color: white;"></div>
+                        <div class="swiper-button-next" style="color: white;"></div>
 
+                    </div>
 
+                    <script>
+                        const swiper = new Swiper('.swiper', {
+                            // Optional parameters
+                            direction: 'horizontal',
+                            loop: true,
 
+                            // If we need pagination
+                            pagination: {
+                                el: '.swiper-pagination',
+                            },
+
+                            // Navigation arrows
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+
+                            // And if we need scrollbar
+                            scrollbar: {
+                                el: '.swiper-scrollbar',
+                            },
+                        });
+                    </script>
                 </span>
                 
-
-
-
-
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="assets/iluzmLogo.png" alt="Logo" class="swiper-content">
-                    </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination" style="color: white;"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev" style="color: white;"></div>
-                <div class="swiper-button-next" style="color: white;"></div>
-
             </div>
 
-            <script>
-                const swiper = new Swiper('.swiper', {
-                    // Optional parameters
-                    direction: 'horizontal',
-                    loop: true,
 
-                    // If we need pagination
-                    pagination: {
-                        el: '.swiper-pagination',
-                    },
 
-                    // Navigation arrows
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
 
-                    // And if we need scrollbar
-                    scrollbar: {
-                        el: '.swiper-scrollbar',
-                    },
-                });
-            </script>
         </div>
+
 
     </section>
 
@@ -264,10 +268,10 @@
 
             <div class="row gx-4 gx-lg-5 py-4">
                 <div class="col-lg-12 justify-content-end text-end">
-                    <a class="mx-2" href="https://www.instagram.com/iluzm_" target="_blank"><img src="assets/instagram-white-icon.png" alt=""
-                            style="width: 2.5%;"></a>
-                    <a class="mx-2" href="https://wa.me/+601136336679" target="_blank"><img src="assets/whatsapp-white-icon.png" alt=""
-                            style="width: 2.5%;"></a>
+                    <a class="mx-2" href="https://www.instagram.com/iluzm_" target="_blank"><img
+                            src="assets/instagram-white-icon.png" alt="" style="width: 2.5%;"></a>
+                    <a class="mx-2" href="https://wa.me/+601136336679" target="_blank"><img
+                            src="assets/whatsapp-white-icon.png" alt="" style="width: 2.5%;"></a>
                     <a class="mx-2" href="mailto:visualbyiluzm@gmail.com"><img src="assets/email-white-icon.png" alt=""
                             style="width: 2.5%;"></a>
                     <br />
