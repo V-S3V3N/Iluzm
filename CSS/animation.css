@@ -181,3 +181,8 @@
     width: 25%;
     padding: 0 1rem;
 }
+
+.elementTable tr{
+    display: block;
+    margin-bottom: 10px;
+}
