@@ -151,34 +151,30 @@
     <section class="bg-black project-section" id="projects">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
-
-                <span class="col-lg-4 justify-content-start text-start">
-                    <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">Projects</h2>
-                
-                    <button id="vfxBtn" class="text-uppercase">VFX</button>
-                    &nbsp;
-                    <button id="animBtn" class="text-uppercase">3D Visuals</button>
-                
-                
-                
-                
-                </span>
-                <span class="col-lg-8 justify-content-end text-end">
+                <span class="col-lg-8 justify-content-start text-start">
                     <!-- Slider main container -->
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
+
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <img src="assets/iluzmLogo.png" alt="Logo" class="swiper-content">
                             </div>
-                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/V93cHqxBArg?si=CjML_vwJqd0PjVdt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                             <div class="swiper-slide">Slide 3</div>
+
+
+
+
+                            <!-- Slides end -->
+
                         </div>
-                        <!-- If we need pagination -->
+                        
                         <div class="swiper-pagination" style="color: white;"></div>
 
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev" style="color: white;"></div>
                         <div class="swiper-button-next" style="color: white;"></div>
 
@@ -208,6 +204,25 @@
                         });
                     </script>
                 </span>
+                <span class="col-lg-4 justify-content-end text-end">
+                    <h2 class="text-white mx-auto mt-2 mb-5 text-uppercase">Projects</h2>
+                
+                    <button id="vfxBtn" class="text-uppercase" onclick="goToVFX()">VFX</button>
+                    &nbsp;
+                    <button id="animBtn" class="text-uppercase" onclick="goTo3D()">3D Visuals</button>
+                
+                    <script>
+                        function goToVFX() {
+                            window.location.href = "/VFX/index.html";
+                        }
+                        function goTo3D() {
+                            window.location.href = "/3DVisual/index.html";
+                        }
+                    </script>
+                
+                
+                </span>
+                
                 
             </div>
 
@@ -248,7 +263,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <a href="">VFX</a>
+                                <a href="/VFX/index.html">VFX</a>
                                 <br>
                                 <a href="">3D Visuals</a>
                             </td>
