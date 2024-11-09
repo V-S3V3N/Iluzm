@@ -11212,3 +11212,265 @@ body {
   padding-top: 5rem;
   padding-bottom: 1rem;
 }
+
+/*START*/
+
+
+/* Video Background */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the video covers the whole screen */
+  z-index: -1;
+  /* Push video to the background */
+}
+
+.glow {
+  font-size: 50px;
+  /* Font size */
+  text-shadow:
+      0 0 5px #fff;
+  /* Stronger white glow */
+}
+
+.text {
+  opacity: 0;
+  /* Initial state: hidden */
+  transform: translateY(20px);
+  /* Initial position: slightly lower */
+  transition: opacity 1s ease, transform 1s ease;
+  /* Transition for fade and move */
+}
+
+.fade-in {
+  opacity: 1;
+  /* Final state: visible */
+  transform: translateY(0);
+  /* Final position: original */
+}
+
+.first-text {
+  /* Optional: styles for the first text */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.second-text {
+  /* Optional: styles for the second text */
+  font-size: 24px;
+}
+
+#animBtn {
+  background-color: transparent;
+  color: white;
+  border: white solid 2px;
+  border-radius: 25px;
+}
+
+#vfxBtn {
+  background-color: transparent;
+  color: white;
+  border: white solid 2px;
+  border-radius: 25px;
+}
+
+#animBtn:hover {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  transition: 0.7s;
+}
+
+#vfxBtn:hover {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  transition: 0.7s;
+}
+
+#animBtn:active {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+}
+
+#vfxBtn:active {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+}
+
+.swiper {
+  width: 80%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  overflow: hidden;
+}
+
+.swiper-content {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active { background-color: #fff !important; }
+
+/* Styling for small screens (like mobile devices) */
+@media (max-width: 600px) {
+  #animBtn {
+      background-color: transparent;
+      color: white;
+      border: white solid 2px;
+      border-radius: 25px;
+      width: 35%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+
+  #vfxBtn {
+      background-color: transparent;
+      color: white;
+      border: white solid 2px;
+      border-radius: 25px;
+      width: 20%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+}
+
+/* Styling for medium screens (like tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #animBtn {
+      background-color: transparent;
+      color: white;
+      border: white solid 2px;
+      border-radius: 25px;
+      width: 25%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+
+  #vfxBtn {
+      background-color: transparent;
+      color: white;
+      border: white solid 2px;
+      border-radius: 25px;
+      width: 12.5%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+}
+
+/* Styling for large screens (like desktops) */
+@media (min-width: 1025px) {
+  #animBtn {
+      width: 50%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+
+  #vfxBtn {
+      width: 20%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+}
+
+/*
+.elementTable td{
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.elementTable tr{
+  display: block;
+  margin-bottom: 10px;
+}
+  */
+
+.table {
+  display: grid;
+  gap: 10px;
+  /* Space between items */
+  width: 100%;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  /* Default to 4 columns */
+}
+
+.table-cell {
+  /*
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply a staggered delay to each .table-cell */
+.table-cell:nth-child(1) { animation-delay: 0.1s; }
+.table-cell:nth-child(2) { animation-delay: 0.15s; }
+.table-cell:nth-child(3) { animation-delay: 0.2s; }
+.table-cell:nth-child(4) { animation-delay: 0.25s; }
+/* Add more nth-child selectors if you have more cells */
+
+.table-cell img {
+  width: 100%;
+  height: 210px;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 410px;
+}
+
+/* Adjust to 3 columns on smaller screens */
+@media (max-width: 900px) {
+  .table {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Adjust to 2 columns on even smaller screens */
+@media (max-width: 600px) {
+  .table {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Adjust to 1 column on very small screens */
+@media (max-width: 400px) {
+  .table {
+      grid-template-columns: 1fr;
+  }
+}
