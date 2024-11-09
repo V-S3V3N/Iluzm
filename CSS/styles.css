@@ -11409,7 +11409,7 @@ body {
 
 .table {
   display: grid;
-  gap: 10px;
+  gap: 5px;
   /* Space between items */
   width: 100%;
   padding: 10px;
@@ -11464,7 +11464,7 @@ body {
 /* Adjust to 2 columns on even smaller screens */
 @media (max-width: 600px) {
   .table {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
   }
 }
 
