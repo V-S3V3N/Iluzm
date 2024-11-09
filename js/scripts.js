@@ -72,4 +72,22 @@ function scrollToProjects() {
     });
 };
 
+function scrollToCGI() {
+    document.getElementById("CGI").scrollIntoView({
+        behavior: 'smooth' // Smooth scroll effect
+    });
+};
+
+function scrollTo3D() {
+    document.getElementById("3D").scrollIntoView({
+        behavior: 'smooth' // Smooth scroll effect
+    });
+};
+
+function scrollToArtwork() {
+    document.getElementById("ARTWORK").scrollIntoView({
+        behavior: 'smooth' // Smooth scroll effect
+    });
+};
+
 
