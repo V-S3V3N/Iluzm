@@ -205,7 +205,26 @@
     border: 1px solid #ccc;
     */
     text-align: center;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards; /* Fade-in animation */
 }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Apply a staggered delay to each .table-cell */
+  .table-cell:nth-child(1) { animation-delay: 0.1s; }
+  .table-cell:nth-child(2) { animation-delay: 0.15s; }
+  .table-cell:nth-child(3) { animation-delay: 0.2s; }
+  .table-cell:nth-child(4) { animation-delay: 0.25s; }
+  /* Add more nth-child selectors if you have more cells */
 
 .table-cell img {
     width: 100%;
